@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8479300-0C70-483E-BA4E-FD72B1ABB268}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTMS</RootNamespace>
+    <AssemblyName>VTMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Server\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Server\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>server.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Server\bin\mysqldumpslow.pl" />
+    <None Include="Server\bin\VTMS.vshost.exe.manifest" />
+    <None Include="Server\bin\VTMS_Server.vshost.exe.manifest" />
+    <None Include="Server\data\mysql\columns_priv.frm" />
+    <None Include="Server\data\mysql\columns_priv.MYD" />
+    <None Include="Server\data\mysql\columns_priv.MYI" />
+    <None Include="Server\data\mysql\db.frm" />
+    <None Include="Server\data\mysql\db.MYD" />
+    <None Include="Server\data\mysql\db.MYI" />
+    <None Include="Server\data\mysql\event.frm" />
+    <None Include="Server\data\mysql\event.MYD" />
+    <None Include="Server\data\mysql\event.MYI" />
+    <None Include="Server\data\mysql\func.frm" />
+    <None Include="Server\data\mysql\func.MYD" />
+    <None Include="Server\data\mysql\func.MYI" />
+    <None Include="Server\data\mysql\general_log.CSM" />
+    <None Include="Server\data\mysql\general_log.CSV" />
+    <None Include="Server\data\mysql\general_log.frm" />
+    <None Include="Server\data\mysql\help_category.frm" />
+    <None Include="Server\data\mysql\help_category.MYD" />
+    <None Include="Server\data\mysql\help_category.MYI" />
+    <None Include="Server\data\mysql\help_keyword.frm" />
+    <None Include="Server\data\mysql\help_keyword.MYD" />
+    <None Include="Server\data\mysql\help_keyword.MYI" />
+    <None Include="Server\data\mysql\help_relation.frm" />
+    <None Include="Server\data\mysql\help_relation.MYD" />
+    <None Include="Server\data\mysql\help_relation.MYI" />
+    <None Include="Server\data\mysql\help_topic.frm" />
+    <None Include="Server\data\mysql\help_topic.MYD" />
+    <None Include="Server\data\mysql\help_topic.MYI" />
+    <None Include="Server\data\mysql\host.frm" />
+    <None Include="Server\data\mysql\host.MYD" />
+    <None Include="Server\data\mysql\host.MYI" />
+    <None Include="Server\data\mysql\ndb_binlog_index.frm" />
+    <None Include="Server\data\mysql\ndb_binlog_index.MYD" />
+    <None Include="Server\data\mysql\ndb_binlog_index.MYI" />
+    <None Include="Server\data\mysql\plugin.frm" />
+    <None Include="Server\data\mysql\plugin.MYD" />
+    <None Include="Server\data\mysql\plugin.MYI" />
+    <None Include="Server\data\mysql\proc.frm" />
+    <None Include="Server\data\mysql\proc.MYD" />
+    <None Include="Server\data\mysql\proc.MYI" />
+    <None Include="Server\data\mysql\procs_priv.frm" />
+    <None Include="Server\data\mysql\procs_priv.MYD" />
+    <None Include="Server\data\mysql\procs_priv.MYI" />
+    <None Include="Server\data\mysql\proxies_priv.frm" />
+    <None Include="Server\data\mysql\proxies_priv.MYD" />
+    <None Include="Server\data\mysql\proxies_priv.MYI" />
+    <None Include="Server\data\mysql\servers.frm" />
+    <None Include="Server\data\mysql\servers.MYD" />
+    <None Include="Server\data\mysql\servers.MYI" />
+    <None Include="Server\data\mysql\slow_log.CSM" />
+    <None Include="Server\data\mysql\slow_log.CSV" />
+    <None Include="Server\data\mysql\slow_log.frm" />
+    <None Include="Server\data\mysql\tables_priv.frm" />
+    <None Include="Server\data\mysql\tables_priv.MYD" />
+    <None Include="Server\data\mysql\tables_priv.MYI" />
+    <None Include="Server\data\mysql\time_zone.frm" />
+    <None Include="Server\data\mysql\time_zone.MYD" />
+    <None Include="Server\data\mysql\time_zone.MYI" />
+    <None Include="Server\data\mysql\time_zone_leap_second.frm" />
+    <None Include="Server\data\mysql\time_zone_leap_second.MYD" />
+    <None Include="Server\data\mysql\time_zone_leap_second.MYI" />
+    <None Include="Server\data\mysql\time_zone_name.frm" />
+    <None Include="Server\data\mysql\time_zone_name.MYD" />
+    <None Include="Server\data\mysql\time_zone_name.MYI" />
+    <None Include="Server\data\mysql\time_zone_transition.frm" />
+    <None Include="Server\data\mysql\time_zone_transition.MYD" />
+    <None Include="Server\data\mysql\time_zone_transition.MYI" />
+    <None Include="Server\data\mysql\time_zone_transition_type.frm" />
+    <None Include="Server\data\mysql\time_zone_transition_type.MYD" />
+    <None Include="Server\data\mysql\time_zone_transition_type.MYI" />
+    <None Include="Server\data\mysql\user.frm" />
+    <None Include="Server\data\mysql\user.MYD" />
+    <None Include="Server\data\mysql\user.MYI" />
+    <None Include="Server\data\performance_schema\cond_instances.frm" />
+    <None Include="Server\data\performance_schema\db.opt" />
+    <None Include="Server\data\performance_schema\events_waits_current.frm" />
+    <None Include="Server\data\performance_schema\events_waits_history.frm" />
+    <None Include="Server\data\performance_schema\events_waits_history_long.frm" />
+    <None Include="Server\data\performance_schema\events_waits_summary_by_instance.frm" />
+    <None Include="Server\data\performance_schema\events_waits_summary_by_thread_by_event_name.frm" />
+    <None Include="Server\data\performance_schema\events_waits_summary_global_by_event_name.frm" />
+    <None Include="Server\data\performance_schema\file_instances.frm" />
+    <None Include="Server\data\performance_schema\file_summary_by_event_name.frm" />
+    <None Include="Server\data\performance_schema\file_summary_by_instance.frm" />
+    <None Include="Server\data\performance_schema\mutex_instances.frm" />
+    <None Include="Server\data\performance_schema\performance_timers.frm" />
+    <None Include="Server\data\performance_schema\rwlock_instances.frm" />
+    <None Include="Server\data\performance_schema\setup_consumers.frm" />
+    <None Include="Server\data\performance_schema\setup_instruments.frm" />
+    <None Include="Server\data\performance_schema\setup_timers.frm" />
+    <None Include="Server\data\performance_schema\threads.frm" />
+    <None Include="Server\setup.bat" />
+    <None Include="Server\share\charsets\README" />
+    <None Include="Server\share\english\errmsg.sys" />
+    <None Include="Server\temp.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="server.ico" />
+    <Content Include="Server\bin\DevComponents.DotNetBar2.DLL" />
+    <Content Include="Server\bin\mysql.exe" />
+    <Content Include="Server\bin\mysql.pdb" />
+    <Content Include="Server\bin\mysqladmin.exe" />
+    <Content Include="Server\bin\mysqladmin.pdb" />
+    <Content Include="Server\bin\mysqld.exe" />
+    <Content Include="Server\bin\mysqld.pdb" />
+    <Content Include="Server\bin\mysqldump.exe" />
+    <Content Include="Server\bin\mysqldump.pdb" />
+    <Content Include="Server\bin\VTMS.exe" />
+    <Content Include="Server\bin\VTMS.pdb" />
+    <Content Include="Server\bin\VTMS.vshost.exe" />
+    <Content Include="Server\share\charsets\armscii8.xml" />
+    <Content Include="Server\share\charsets\ascii.xml" />
+    <Content Include="Server\share\charsets\cp1250.xml" />
+    <Content Include="Server\share\charsets\cp1251.xml" />
+    <Content Include="Server\share\charsets\cp1256.xml" />
+    <Content Include="Server\share\charsets\cp1257.xml" />
+    <Content Include="Server\share\charsets\cp850.xml" />
+    <Content Include="Server\share\charsets\cp852.xml" />
+    <Content Include="Server\share\charsets\cp866.xml" />
+    <Content Include="Server\share\charsets\dec8.xml" />
+    <Content Include="Server\share\charsets\geostd8.xml" />
+    <Content Include="Server\share\charsets\greek.xml" />
+    <Content Include="Server\share\charsets\hebrew.xml" />
+    <Content Include="Server\share\charsets\hp8.xml" />
+    <Content Include="Server\share\charsets\Index.xml" />
+    <Content Include="Server\share\charsets\keybcs2.xml" />
+    <Content Include="Server\share\charsets\koi8r.xml" />
+    <Content Include="Server\share\charsets\koi8u.xml" />
+    <Content Include="Server\share\charsets\latin1.xml" />
+    <Content Include="Server\share\charsets\latin2.xml" />
+    <Content Include="Server\share\charsets\latin5.xml" />
+    <Content Include="Server\share\charsets\latin7.xml" />
+    <Content Include="Server\share\charsets\macce.xml" />
+    <Content Include="Server\share\charsets\macroman.xml" />
+    <Content Include="Server\share\charsets\swe7.xml" />
+    <Content Include="Server\vtms.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

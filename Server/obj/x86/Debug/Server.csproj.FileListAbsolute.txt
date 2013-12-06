@@ -1,0 +1,9 @@
+D:\VTMS\Server\Server\bin\VTMS.exe
+D:\VTMS\Server\Server\bin\VTMS.pdb
+D:\VTMS\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VTMS\Server\obj\x86\Debug\VTMS.MainForm.resources
+D:\VTMS\Server\obj\x86\Debug\VTMS.Properties.Resources.resources
+D:\VTMS\Server\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\VTMS\Server\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\VTMS\Server\obj\x86\Debug\VTMS.exe
+D:\VTMS\Server\obj\x86\Debug\VTMS.pdb

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true">
+	<class name="VTMS.Model.Entities.Apply,VTMS.Model.Entities" table="apply" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Serial" column="serial" type="String">
+			<generator class="assigned"/>
+		</id>
+		
+		<!-- Properties -->
+		<property column="category" type="String" name="Category" length="20" />
+		<property column="license" type="String" name="License" length="10" />
+		<property column="plateRenew" type="String" name="PlateRenew" length="5" />
+		<property column="plateChange" type="String" name="PlateChange" length="5" />
+		<property column="driverRenew" type="String" name="DriverRenew" length="5" />
+		<property column="driverChange" type="String" name="DriverChange" length="50" />
+		<property column="licenseApply" type="String" name="LicenseApply" length="50" />
+		<property column="licenseRenew" type="String" name="LicenseRenew" length="5" />
+		<property column="licenseChange" type="String" name="LicenseChange" length="50" />
+		<property column="signApply" type="String" name="SignApply" length="20" />
+		<property column="signRenew" type="String" name="SignRenew" length="5" />
+		<property column="signChange" type="String" name="SignChange" length="50" />
+		<property column="ownerName" type="String" name="OwnerName" length="100" />
+		<property column="ownerAddress" type="String" name="OwnerAddress" length="200" />
+		<property column="ownerPostcode" type="String" name="OwnerPostcode" length="10" />
+		<property column="ownerPhone" type="String" name="OwnerPhone" length="20" />
+		<property column="ownerEmail" type="String" name="OwnerEmail" length="100" />
+		<property column="ownerMobile" type="String" name="OwnerMobile" length="20" />
+		<property column="agentName" type="String" name="AgentName" length="100" />
+		<property column="agentAddress" type="String" name="AgentAddress" length="200" />
+		<property column="agentPostcode" type="String" name="AgentPostcode" length="10" />
+		<property column="agentPhone" type="String" name="AgentPhone" length="20" />
+		<property column="agentEmail" type="String" name="AgentEmail" length="100" />
+		<property column="handlerName" type="String" name="HandlerName" length="100" />
+		<property column="handlerPhone" type="String" name="HandlerPhone" length="20" />
+		<property column="saver" type="String" name="Saver" not-null="true" length="15" />
+		<property column="save_date" type="DateTime" name="SaveDate" not-null="true" />
+		<property column="printer" type="String" name="Printer" length="10" />
+		<property column="print_date" type="DateTime" name="PrintDate" />
+		
+	</class>
+</hibernate-mapping>

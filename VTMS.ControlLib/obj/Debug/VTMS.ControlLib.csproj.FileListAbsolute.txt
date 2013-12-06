@@ -1,0 +1,12 @@
+D:\VTMS\VTMS.ControlLib\bin\Debug\VTMS.ControlLib.dll
+D:\VTMS\VTMS.ControlLib\bin\Debug\VTMS.ControlLib.pdb
+D:\VTMS\VTMS.ControlLib\bin\Debug\DevComponents.DotNetBar.Design.dll
+D:\VTMS\VTMS.ControlLib\bin\Debug\DevComponents.DotNetBar2.dll
+D:\VTMS\VTMS.ControlLib\bin\Debug\VTMS.Common.dll
+D:\VTMS\VTMS.ControlLib\bin\Debug\VTMS.Common.pdb
+D:\VTMS\VTMS.ControlLib\obj\Debug\ResolveAssemblyReference.cache
+D:\VTMS\VTMS.ControlLib\obj\Debug\VTMS.ControlLib.Properties.Resources.resources
+D:\VTMS\VTMS.ControlLib\obj\Debug\GenerateResource.read.1.tlog
+D:\VTMS\VTMS.ControlLib\obj\Debug\GenerateResource.write.1.tlog
+D:\VTMS\VTMS.ControlLib\obj\Debug\VTMS.ControlLib.dll
+D:\VTMS\VTMS.ControlLib\obj\Debug\VTMS.ControlLib.pdb

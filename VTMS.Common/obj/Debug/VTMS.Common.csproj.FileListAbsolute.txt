@@ -1,0 +1,5 @@
+D:\VTMS\VTMS.Common\bin\Debug\VTMS.Common.dll
+D:\VTMS\VTMS.Common\bin\Debug\VTMS.Common.pdb
+D:\VTMS\VTMS.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\VTMS\VTMS.Common\obj\Debug\VTMS.Common.dll
+D:\VTMS\VTMS.Common\obj\Debug\VTMS.Common.pdb

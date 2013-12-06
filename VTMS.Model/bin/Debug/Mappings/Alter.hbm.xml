@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true">
+	<class name="VTMS.Model.Entities.Alter,VTMS.Model.Entities" table="alters" lazy="true">
+
+		<!-- Primary Key(s) -->
+		<id name="Serial" column="serial" type="String">
+			<generator class="assigned"/>
+		</id>
+		
+		<!-- Properties -->
+		<property column="category" type="String" name="Category" length="20" />
+		<property column="license" type="String" name="License" length="10" />
+		<property column="ownerName" type="String" name="OwnerName" length="100" />
+		<property column="purpose" type="String" name="Purpose" length="20" />
+		<property column="owner" type="String" name="Owner" length="100" />
+		<property column="newAddress" type="String" name="NewAddress" length="100" />
+		<property column="postAddress" type="String" name="PostAddress" length="100" />
+		<property column="postcode" type="String" name="Postcode" length="10" />
+		<property column="email" type="String" name="Email" length="100" />
+		<property column="phone" type="String" name="Phone" length="20" />
+		<property column="mobile" type="String" name="Mobile" length="20" />
+		<property column="province" type="String" name="Province" length="50" />
+		<property column="department" type="String" name="Department" length="50" />
+		<property column="engine" type="Boolean" name="Engine" />
+		<property column="body" type="Boolean" name="Body" />
+		<property column="color" type="Boolean" name="Color" />
+		<property column="whole" type="Boolean" name="Whole" />
+		<property column="engineCode" type="Boolean" name="EngineCode" />
+		<property column="vin" type="Boolean" name="Vin" />
+		<property column="idCode" type="Boolean" name="IdCode" />
+		<property column="information" type="String" name="Information" length="150" />
+		<property column="agentName" type="String" name="AgentName" length="100" />
+		<property column="agentAddress" type="String" name="AgentAddress" length="200" />
+		<property column="agentPostcode" type="String" name="AgentPostcode" length="10" />
+		<property column="agentPhone" type="String" name="AgentPhone" length="20" />
+		<property column="agentEmail" type="String" name="AgentEmail" length="100" />
+		<property column="handlerName" type="String" name="HandlerName" length="100" />
+		<property column="handlerPhone" type="String" name="HandlerPhone" length="20" />
+		<property column="saver" type="String" name="Saver" not-null="true" length="15" />
+		<property column="save_date" type="DateTime" name="SaveDate" not-null="true" />
+		<property column="printer" type="String" name="Printer" length="10" />
+		<property column="print_date" type="DateTime" name="PrintDate" />
+		
+	</class>
+</hibernate-mapping>
