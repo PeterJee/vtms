@@ -74,3 +74,6 @@ D:\VTMS\Client\Client\Antlr3.Runtime.dll
 D:\VTMS\Client\Client\Remotion.Linq.dll
 D:\VTMS\Client\Client\NHibernate.pdb
 D:\VTMS\Client\Client\NHibernate.xml
+E:\vtms\Client\Client\VTMS.exe.config
+E:\vtms\Client\obj\x86\Debug\VTMS.exe
+E:\vtms\Client\obj\x86\Debug\VTMS.pdb
