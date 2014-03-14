@@ -55,7 +55,7 @@
             this.labelX1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX1.Location = new System.Drawing.Point(55, 52);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(74, 26);
+            this.labelX1.Size = new System.Drawing.Size(66, 24);
             this.labelX1.TabIndex = 0;
             this.labelX1.Text = "用户名：";
             // 
@@ -71,7 +71,7 @@
             this.labelX2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX2.Location = new System.Drawing.Point(55, 88);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(57, 26);
+            this.labelX2.Size = new System.Drawing.Size(50, 24);
             this.labelX2.TabIndex = 2;
             this.labelX2.Text = "密码：";
             // 
@@ -87,7 +87,7 @@
             this.labelX3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX3.Location = new System.Drawing.Point(55, 124);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(90, 26);
+            this.labelX3.Size = new System.Drawing.Size(82, 24);
             this.labelX3.TabIndex = 5;
             this.labelX3.Text = "服务器IP：";
             // 
@@ -104,7 +104,7 @@
             this.labelX4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelX4.Location = new System.Drawing.Point(-3, -3);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(375, 46);
+            this.labelX4.Size = new System.Drawing.Size(355, 43);
             this.labelX4.TabIndex = 7;
             this.labelX4.Text = "车  辆  交  易  信  息  系  统";
             // 
@@ -133,7 +133,7 @@
             this.pwdCBox.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.pwdCBox.Location = new System.Drawing.Point(194, 158);
             this.pwdCBox.Name = "pwdCBox";
-            this.pwdCBox.Size = new System.Drawing.Size(76, 18);
+            this.pwdCBox.Size = new System.Drawing.Size(70, 16);
             this.pwdCBox.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.pwdCBox.TabIndex = 6;
             this.pwdCBox.Text = "记住密码";
@@ -178,6 +178,7 @@
             this.server.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.server.Location = new System.Drawing.Point(147, 123);
             this.server.Name = "server";
+            this.server.ReadOnly = true;
             this.server.Size = new System.Drawing.Size(137, 29);
             this.server.TabIndex = 3;
             // 
@@ -228,6 +229,7 @@
             this.Controls.Add(this.labelX3);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(390, 272);
             this.MinimizeBox = false;

@@ -1,0 +1,8 @@
+E:\vtms\NHibernate\obj\Release-2.0\ResolveAssemblyReference.cache
+E:\vtms\NHibernate\bin\Release-2.0\NHibernate.dll
+E:\vtms\NHibernate\bin\Release-2.0\NHibernate.pdb
+E:\vtms\NHibernate\bin\Release-2.0\Antlr3.Runtime.dll
+E:\vtms\NHibernate\bin\Release-2.0\Iesi.Collections.dll
+E:\vtms\NHibernate\bin\Release-2.0\Remotion.Linq.dll
+E:\vtms\NHibernate\obj\Release-2.0\NHibernate.dll
+E:\vtms\NHibernate\obj\Release-2.0\NHibernate.pdb

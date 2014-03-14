@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" default-lazy="true">
+  <class name="VTMS.Model.Entities.Archives,VTMS.Model.Entities" table="archives" lazy="true">
+
+    <!-- Primary Key(s) -->
+    <id name="License" column="license" type="String">
+      <generator class="assigned"/>
+    </id>
+
+    <!-- Properties -->
+    <property column="process" type="String" name="Process" not-null="true" length="5" />
+    <property column="reason" type="String" name="Reason" />
+    <property column="saveDate" type="DateTime" name="SaveDate" />
+    <property column="saver" type="String" name="Saver" />
+
+  </class>
+</hibernate-mapping>

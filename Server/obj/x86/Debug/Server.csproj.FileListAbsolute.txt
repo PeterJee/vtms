@@ -7,3 +7,12 @@ D:\VTMS\Server\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\VTMS\Server\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\VTMS\Server\obj\x86\Debug\VTMS.exe
 D:\VTMS\Server\obj\x86\Debug\VTMS.pdb
+E:\vtms\Server\Server\bin\VTMS.exe
+E:\vtms\Server\Server\bin\VTMS.pdb
+E:\vtms\Server\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\vtms\Server\obj\x86\Debug\VTMS.MainForm.resources
+E:\vtms\Server\obj\x86\Debug\VTMS.Properties.Resources.resources
+E:\vtms\Server\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\vtms\Server\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\vtms\Server\obj\x86\Debug\VTMS.exe
+E:\vtms\Server\obj\x86\Debug\VTMS.pdb

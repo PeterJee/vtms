@@ -35,6 +35,7 @@ namespace VTMS.Access
             ISession session = SessionFactory.OpenSession();
             {
                 string serial = session.GetNamedQuery("GetLatestSerial").List()[0].ToString();
+                session.Clear();
                 return serial;
             }
         }
@@ -46,6 +47,7 @@ namespace VTMS.Access
             {
                 var id = session.Save(entity);
                 session.Flush();
+                session.Clear();
                 return id;
             }
         }
@@ -56,6 +58,7 @@ namespace VTMS.Access
             {
                 session.Update(entity);
                 session.Flush();
+                session.Clear();
             }
         }
 
@@ -65,6 +68,7 @@ namespace VTMS.Access
             {
                 session.Delete(entity);
                 session.Flush();
+                session.Clear();
             }
         }
 
@@ -72,7 +76,9 @@ namespace VTMS.Access
         {
             ISession session = SessionFactory.OpenSession();
             {
-                return session.Get<Vehicle>(id);
+                Vehicle vehicle = session.Get<Vehicle>(id);
+                session.Clear();
+                return vehicle;
             }
         }
         public static DataSet GetFirst20Row()

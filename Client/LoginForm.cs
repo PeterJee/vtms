@@ -156,10 +156,10 @@ namespace VTMS
         {
             if (string.IsNullOrWhiteSpace(this.userId.Text))
                 return;
-            if (string.IsNullOrWhiteSpace(this.server.Text))
-            {
-                return;
-            }
+            //if (string.IsNullOrWhiteSpace(this.server.Text))
+            //{
+            //    return;
+            //}
             user = UsersDao.GetById(this.userId.Text);
             if (user != null)
             {
